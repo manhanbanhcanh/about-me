@@ -3,94 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-DIy2vnAl.png" />
-    <title>it's me</title>
-    <link rel="stylesheet" crossorigin href="/assets/index-wHQz4gNu.css">
+    <title>about-me</title>
+    <script type="module" crossorigin src="/assets/index-Fq5TDJrJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BGFzLmCd.css">
   </head>
   <body>
-    <div id="left-side-pannel">
-      <div id="name"><p>Duc Manh</p></div>
-      <div id="image">
-        <img src="/assets/front-TlsvG4M7.png" draggable="false" />
-      </div>
-      <div id="title"><p>🎓 Sophomore, Hanoi University</p></div>
-    </div>
-    <div id="right-side-pannel">
-      <div id="link-span">
-        <a href="https://www.facebook.com/ogducmanh/" target="_blank"
-          ><i class="bi bi-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/manhanbanhcanh/" target="_blank"
-          ><i class="bi bi-instagram"></i
-        ></a>
-        <a href="https://www.youtube.com/@manhanbanhcanh" target="_blank"
-          ><i class="bi bi-youtube"></i
-        ></a>
-        <a href="https://x.com/manhanbanhcanh" target="_blank"
-          ><i class="bi bi-twitter-x"></i
-        ></a>
-      </div>
-      <div id="detail-wrapper">
-        <div id="box1">
-          <strong>Vibe coder</strong>
-          <p>Yeah, I actually code only when I feels like it</p>
-        </div>
-        <div id="box2">
-          <strong>Coding languagues</strong>
-          <p>
-            I mainly code in Java, but I do know Python, C++, JavaScript, and
-            PowerShell scripting on Windows machine. I am currently learning
-            Java in-depth so I will not be learning new languagues until I am
-            finished with Java
-          </p>
-        </div>
-        <div id="box3">
-          <strong>Tutorials</strong>
-          <p>
-            Check out my Github repo for tutorials on basic Java coding (mainly
-            for HANU-ers)
-          </p>
-        </div>
-      </div>
-      <div id="works-wrapper">
-        <div id="github">
-          <div id="icon"><i class="bi bi-github"></i></div>
-          <p>github.com</p>
-        </div>
-        <div id="bi-spotify">
-          <i class="bi bi-spotify"></i>
-          <p>open.spotify.com</p>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const links = {
-          github: "https://github.com/manhanbanhcanh",
-          "bi-spotify":
-            "https://https://open.spotify.com/user/31cjxtll26km3w7dawor3iacf3cy",
-          box3: "https://github.com/manhanbanhcanh/PR2-Summer-2026",
-        };
-
-        Object.keys(links).forEach((id) => {
-          const element = document.getElementById(id);
-          if (element) {
-            element.addEventListener("click", () => {
-              window.open(links[id], "_blank");
-            });
-          }
-        });
-
-        const socials = document.querySelectorAll("#link-span a");
-        socials.forEach((link) => {
-          link.addEventListener("click", (e) => {});
-        });
-      });
-    </script>
+    <div id="root"></div>
   </body>
 </html>
