@@ -36,30 +36,28 @@ export default function CardLink() {
 
         return (
           <div
-            key={card.id}
             className={`
-              ${colSpanMap[colSpan]}
-              ${rowSpanMap[rowSpan]}
-              ${isSquared ? "aspect-square" : ""}
-              
-              rounded-xl
-              p-4
-              bg-ctp-mantle
-              flex
-              flex-col
-              justify-between
-              transition
-              duration-300
-              hover:-translate-y-1
-              hover:shadow-xl
-            `}
+            ${colSpanMap[colSpan]}
+            ${rowSpanMap[rowSpan]}
+            ${isSquared ? "sm:aspect-square" : ""}
+
+            rounded-xl
+            p-4
+            bg-ctp-mantle
+            flex
+            flex-col
+            justify-start
+            gap-3
+            transition
+            duration-300
+            hover:-translate-y-1
+            hover:shadow-xl
+          `}
           >
-            {/* Icon */}
             <div className="p-2 bg-ctp-crust w-fit rounded-md">
               <Icon className="text-ctp-rosewater" />
             </div>
 
-            {/* Text */}
             <div>
               <h3 className="text-ctp-text font-medium">{card.title}</h3>
               <p className="text-ctp-subtext0 text-sm">{card.description}</p>

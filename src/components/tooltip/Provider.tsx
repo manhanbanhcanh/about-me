@@ -50,8 +50,8 @@ export function TooltipProvider({ children }: { children: ReactNode }) {
       <div
         className={`
           fixed pointer-events-none z-50
-          transition-all duration-150 ease-out
-          ${tooltip.visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}
+          transition-all duration-250 ease-out
+          ${tooltip.visible ? "opacity-100 duration-500 transition-opacity" : "opacity-0 transition-opacity"}
         `}
         style={{
           left: tooltip.x + 12,

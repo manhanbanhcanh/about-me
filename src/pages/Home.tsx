@@ -11,7 +11,6 @@ export default function Home() {
       className="latte font-quicksand font-medium transition-all duration-300"
     >
       <div className="flex flex-col justify-between bg-ctp-base min-h-screen w-screen transition duration-300">
-        {/* HEADER */}
         <header className="flex justify-between items-center px-4 sm:px-8 py-4">
           <div className="flex items-center gap-4">
             <Tooltip text="this page's repo">
@@ -52,7 +51,6 @@ export default function Home() {
           <ThemeSwitch />
         </header>
 
-        {/* BODY */}
         <div
           className="
             flex
@@ -66,12 +64,10 @@ export default function Home() {
             py-10
           "
         >
-          {/* LEFT SIDE */}
           <div className="w-full lg:w-1/3">
             <Information />
           </div>
 
-          {/* RIGHT SIDE */}
           <div className="w-full lg:w-2/3 flex flex-col gap-4">
             <p className="text-ctp-flamingo font-semibold text-lg">
               My Social（*゜ー゜*）

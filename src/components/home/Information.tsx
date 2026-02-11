@@ -4,9 +4,7 @@ import { CalendarHeart } from "lucide-react";
 export default function Information() {
   return (
     <div className="flex flex-col justify-between gap-8 w-full max-w-md lg:max-w-none">
-      {/* TOP */}
       <div className="space-y-4">
-        {/* Profile Picture */}
         <div>
           <img
             src="/pfp.png"
@@ -26,7 +24,6 @@ export default function Information() {
           />
         </div>
 
-        {/* Name */}
         <h1 className="text-3xl sm:text-4xl font-bold text-ctp-text">
           Duc Manh{" "}
           <span className="inline-flex items-center text-ctp-green-100">
@@ -36,7 +33,6 @@ export default function Information() {
           </span>
         </h1>
 
-        {/* Subtext Badge */}
         <div
           className="
             inline-block
@@ -53,7 +49,6 @@ export default function Information() {
           🎓 Sophomore, Hanoi University
         </div>
 
-        {/* List */}
         <ul className="text-ctp-text text-base sm:text-lg space-y-1">
           <li>I lost my glasses.</li>
           <li>{"<(＿　＿)> minimalism freak"}</li>
