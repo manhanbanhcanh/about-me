@@ -25,7 +25,8 @@ export default function CardLink() {
           <div
             key={card.id}
             className={`${colSpanMap[colSpan]} ${rowSpanMap[rowSpan]} ${isSquared ? "max-w-40" : "max-w-88"}
-            rounded-xl p-4 bg-ctp-mantle flex flex-col justify-around transition ease-in-out duration-400 hover:-translate-y-1 min-w-40 max-h-40 shadow-(color:ctp-mantle)`}
+            rounded-xl p-4 bg-ctp-mantle flex flex-col justify-around z-0
+            transition ease-in-out duration-400 hover:-translate-y-1 min-w-40 max-h-40 hover:shadow-xl hover:shadow-(color:ctp-mantle)`}
           >
             <div
               id="icon"
@@ -36,7 +37,7 @@ export default function CardLink() {
             <div id="texts" className="transition ease-in-out duration-400">
               <h3 className="text-ctp-text">{card.title}</h3>
               <p className="text-ctp-subtext0 text-sm">{card.description}</p>
-              <button className="bg-ctp-rosewater min-w-10 my-2 rounded-sm">
+              <button className="bg-ctp-rosewater text-ctp-mantle min-w-10 my-2 rounded-sm hover:bg-ctp-rosewater-700 transition duration-400 ease-in-out">
                 <a
                   href={`${card.link}`}
                   target="_blank"
