@@ -3,91 +3,61 @@ import { CalendarHeart } from "lucide-react";
 
 export default function Information() {
   return (
-    <div
-      id="container"
-      className="flex flex-col gap-4 min-w-100 justify-between min-h-full"
-    >
-      <div id="top">
-        <div id="profile-picture" className="">
+    <div className="flex flex-col justify-between gap-8 w-full max-w-md lg:max-w-none">
+      {/* TOP */}
+      <div className="space-y-4">
+        {/* Profile Picture */}
+        <div>
           <img
-            src="../../../pfp.png"
-            className="rounded-full w-50 h-50 shadow-xl shadow-(color:ctp-mantle)
-            transition duration-400 ease-in-out hover:sepia-10"
-            draggable="false"
+            src="/pfp.png"
+            alt="Profile"
+            draggable={false}
+            className="
+              rounded-full
+              w-32 h-32
+              sm:w-40 sm:h-40
+              lg:w-48 lg:h-48
+              object-cover
+              shadow-xl
+              transition
+              duration-300
+              hover:sepia-10
+            "
           />
         </div>
-        <div id="name" className="">
-          <h1 className="text-4xl font-bold mx-4 my-4 text-ctp-text">
-            Duc Manh{" "}
-            <span className="text-ctp-green-100 hover:cursor-wait">
-              <Tooltip text="Available for works">
-                <CalendarHeart size={29} strokeWidth={3} />
-              </Tooltip>
-            </span>
-          </h1>
-        </div>
+
+        {/* Name */}
+        <h1 className="text-3xl sm:text-4xl font-bold text-ctp-text">
+          Duc Manh{" "}
+          <span className="inline-flex items-center text-ctp-green-100">
+            <Tooltip text="Available for works">
+              <CalendarHeart size={24} strokeWidth={2.5} className="ml-2" />
+            </Tooltip>
+          </span>
+        </h1>
+
+        {/* Subtext Badge */}
         <div
-          id="subtext"
-          className="ml-4 my-3 bg-ctp-mantle text-ctp-rosewater rounded-md max-w-67 opacity-80 
-        hover:opacity-100 hover:cursor-default transition ease-in-out duration-400"
+          className="
+            inline-block
+            bg-ctp-mantle
+            text-ctp-rosewater
+            rounded-md
+            px-3 py-1
+            text-sm
+            opacity-80
+            hover:opacity-100
+            transition
+          "
         >
-          <p className="mx-2 my-1">🎓 Sophomore, Hanoi University</p>
+          🎓 Sophomore, Hanoi University
         </div>
-        <ul className="list-none mx-4 my-1 text-ctp-text rounded-md px-2 pd-1 text-lg">
+
+        {/* List */}
+        <ul className="text-ctp-text text-base sm:text-lg space-y-1">
           <li>I lost my glasses.</li>
           <li>{"<(＿　＿)> minimalism freak"}</li>
         </ul>
-      </div>
-      <div id="bottom">
-        <div
-          id="subtext"
-          className="justify-end text-ctp-surface2 text-sm ml-4"
-        >
-          <p>© 2026 banhcanh.</p>
-          <p>
-            built with
-            <span
-              className="text-ctp-rosewater-50
-            hover:text-ctp-rosewater-300 transition ease-in-out duration-400"
-            >
-              <a href="https://react.dev/" target="_blank">
-                {" "}
-                React
-              </a>
-            </span>
-            ,
-            <span
-              className="text-ctp-rosewater-50
-            hover:text-ctp-rosewater-300 transition ease-in-out duration-400"
-            >
-              <a href="https://catppuccin.com/" target="_blank">
-                {" "}
-                Catppuccin
-              </a>
-            </span>
-            ,
-            <span
-              className="text-ctp-rosewater-50
-            hover:text-ctp-rosewater-300 transition ease-in-out duration-400"
-            >
-              <a href="https://tailwindcss.com/" target="_blank">
-                {" "}
-                Tailwind CSS v4
-              </a>
-            </span>
-            , and
-            <span
-              className="text-ctp-rosewater-50
-            hover:text-ctp-rosewater-300 transition ease-in-out duration-400"
-            >
-              <a href="https://lucide.dev/" target="_blank">
-                {" "}
-                Lucide
-              </a>
-            </span>
-            .
-          </p>
-        </div>
       </div>
     </div>
   );
