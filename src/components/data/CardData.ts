@@ -70,6 +70,6 @@ export const cards: CardData[] = [
     icon: Twitter,
     title: "manhanbanhcanh",
     description: "x.com",
-    link: "<Twitter />",
+    link: "https://x.com/manhanbanhcanh",
   },
 ];
