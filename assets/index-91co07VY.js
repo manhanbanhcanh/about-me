@@ -40,7 +40,6 @@ Please change the parent <Route path="${Z}"> to <Route path="${Z==="/"?"*":`${Z}
         md:grid-cols-3\r
         lg:grid-cols-4\r
         2xl:grid-cols-4\r
-        auto-rows-[minmax(180px,auto)]\r
         gap-4\r
         p-4\r
       `,children:O1.map(u=>{const r=u.icon,f=u.colSpan??1,o=u.rowSpan??1,s={1:"col-span-1",2:"col-span-1 sm:col-span-2"},d={1:"row-span-1",2:"row-span-1 sm:row-span-2"},m=o===1&&f===1,v=u.id==="spotify";return le.jsxs("div",{className:`
