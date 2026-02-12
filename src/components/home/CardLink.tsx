@@ -10,7 +10,6 @@ export default function CardLink() {
         md:grid-cols-3
         lg:grid-cols-4
         2xl:grid-cols-4
-        auto-rows-[minmax(180px,auto)]
         gap-4
         p-4
       "
